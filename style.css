@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+body{
+    background-color: #E3F2FD;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.container .color{
+    margin: 12px;
+    padding: 7px;
+    list-style: none;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(52,87,220,0.08);
+    transition: all 0.5s ease;
+}
+
+.container .color:active{
+    transform: scale(0.95);
+}
+
+.color .rect-box{
+    height: 188px;
+    width: 185px;
+    border-radius: 4px;
+    background-color: rgb(81, 171, 193);
+}
+
+.container .color:hover .rect-box{
+    filter: brightness(107%);
+}
+
+.color .hex-val{
+    text-transform: uppercase;
+    margin: 12px 0 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    user-select: none;
+    color: #444;
+}
+
+.refresh-btn{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    outline: none;
+    background: #8A6CFF;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(52,87,220,0.2);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+.refresh-btn:hover{
+    background-color: #704dff;
+}
+
+.refresh-btn:active{
+    padding: 14px 21px;
+    background: #8769ff;
+}
